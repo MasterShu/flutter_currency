@@ -6,9 +6,9 @@ import 'package:flutter_currency/utils.dart';
 
 /// A Flutter currency lib
 class FlutterCurrency {
-  num intValue;
+  num intValue = 0;
   get value => intValue / 100;
-  num _precision;
+  num _precision = 0;
 
   FlutterCurrency(num d) {
     intValue = parse(d);
